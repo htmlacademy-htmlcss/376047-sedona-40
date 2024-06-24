@@ -23,7 +23,7 @@
           <ul class="main-navigation__user-navigation user-navigation">
             <li class="user-navigation__item">
               <a class="user-navigation__link" href="#">
-                <span class="visually-hidden">Поиск</span>
+                <span class="visually-hidden">Поиск.</span>
               </a>
             </li>
             <li class="user-navigation__item">
@@ -33,7 +33,7 @@
               </a>
             </li>
             <li class="user-navigation__item">
-              <a class="user-navigation__link user-navigation__button button buttons--basic" href="#">Хочу сюда</a>
+              <a class="user-navigation__button button buttons--basic" href="#">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
@@ -45,12 +45,10 @@
             <li class="breadcrumbs__item">
               <a class="breadcrumbs__link" href="index.html"><span class="visually-hidden">Главная</span></a>
             </li>
-            <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link">гостиницы</a>
-            </li>
+            <li class="breadcrumbs__item">Гостиницы</li>
           </ul>
           <section class="catalog-hotels" data-test=" filter">
-            <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
+            <h2 class="visually-hidden">Список гостиниц с фильтрами.</h2>
             <form class="catalog__filter catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
               <fieldset class="catalog-filter__group">
                 <legend class="catalog-filter__title">Инфраструктура:</legend>
@@ -111,28 +109,32 @@
           </section>
         </header>
         <section class="catalog-results catalog" data-test="catalog">
-          <b class="catalog-results__title">Найдено гостиниц: 38</b>
-          <select class="catalog__select-control select-control" aria-label="Сортировка">
-            <option value="cheap">Сначала дешёвые</option>
-            <option value="popular">Сначала популярные</option>
-            <option value="expensive">Сначала дорогие</option>
-          </select>
-          <ul class="catalog-results__view catalog-view">
-            <li class="catalog-view__item catalog-view__item--active" href="catalog.html?view=tile">
-              <span class="visually-hidden">Показать плиткой</span>
-            </li>
-            <li class="catalog-view__item" href="catalog.html?view=card">
-              <span class="visually-hidden">Показать карточки и описание</span>
-            </li>
-            <li class="catalog-view__item" href="catalog.html?view=list">
-              <span class="visually-hidden">Показать список</span>
-            </li>
-          </ul>
+          <div class="catalog-results__header">
+            <b class="catalog-results__title">Найдено гостиниц: 38</b>
+            <div class="catalog-sort__container">
+              <select class="catalog__select-control select-control" aria-label="Сортировка">
+                <option value="cheap">Сначала дешёвые</option>
+                <option value="popular">Сначала популярные</option>
+                <option value="expensive">Сначала дорогие</option>
+              </select>
+              <ul class="catalog-results__view catalog-view">
+                <li class="catalog-view__item catalog-view__item--active" href="catalog.html?view=tile">
+                  <span class="visually-hidden">Показать плиткой.</span>
+                </li>
+                <li class="catalog-view__item" href="catalog.html?view=card">
+                  <span class="visually-hidden">Показать карточки и описание.</span>
+                </li>
+                <li class="catalog-view__item" href="catalog.html?view=list">
+                  <span class="visually-hidden">Показать список.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
           <ul class="catalog-results__list catalog-list">
             <li class="catalog-list__item catalog-card">
               <a href="catalog.html" class="catalog-card__link">
                 <img class="catalog-card__image" src="images/hotel-1.jpg" width="300" height="212"
-                  alt="Ущелье с видом на звезды">
+                  alt="Ущелье с видом на звезды.">
                 <h3 class="catalog-card__title">Amara Resort & Spa</h3>
               </a>
               <p class="catalog-card__description">
@@ -144,14 +146,14 @@
                 <button class="button card-button button--second">В избранное</button>
               </div>
               <div class="catalog-card__rating rating">
-                <span class="visually-hidden">4 звезды</span>
+                <span class="visually-hidden">4 звезды.</span>
                 <span class="rating__value">Рейтинг: 8,5</span>
               </div>
             </li>
             <li class="catalog-list__item catalog-card">
               <a href="catalog.html" class="catalog-card__link">
                 <img class="catalog-card__image" src="images/hotel-2.jpg" width="300" height="212"
-                  alt="Гора и радуга в небе">
+                  alt="Гора и радуга в небе.">
                 <h3 class="catalog-card__title">Villas at Poco Diablo</h3>
               </a>
               <p class="catalog-card__description">
@@ -170,7 +172,7 @@
             <li class="catalog-list__item catalog-card">
               <a href="catalog.html" class="catalog-card__link">
                 <img class="catalog-card__image" src="images/hotel-3.jpg" width="300" height="212"
-                  alt="Гора и солнечный день">
+                  alt="Гора и солнечный день.">
                 <h3 class="catalog-card__title">Desert Quail Inn</h3>
               </a>
               <p class="catalog-card__description">
@@ -183,14 +185,14 @@
               </div>
               <div class="catalog-card__rating rating">
                 <span class="visually-hidden"></span>
-                <span class="visually-hidden">3 звезды</span>
+                <span class="visually-hidden">3 звезды.</span>
                 <span class="rating__value">Рейтинг: 6,9</span>
               </div>
             </li>
             <li class="catalog-list__item catalog-card">
               <a href="catalog.html" class="catalog-card__link">
                 <img class="catalog-card__image" src="images/hotel-4.jpg" width="300" height="212"
-                  alt="Гора и ночное небо">
+                  alt="Гора и ночное небо.">
                 <h3 class="catalog-card__title">GreenTree Inn</h3>
               </a>
               <p class="catalog-card__description">
@@ -202,7 +204,7 @@
                 <button class="button card-button button--second">В избранное</button>
               </div>
               <div class="catalog-card__rating rating">
-                <span class="visually-hidden">2 звезды</span>
+                <span class="visually-hidden">2 звезды.</span>
                 <span class="rating__value">Рейтинг: 5,0</span>
               </div>
             </li>
@@ -229,33 +231,35 @@
           </ul>
         </section>
         <section class="subscribe subscribe--second" data-test="subscribe">
-          <h2 class="subscribe__title">Подпишитесь на рассылку</h2>
-          <p class="subscribe__description">Только полезная информация и никакого спама, честное бойскаутское!</p>
-          <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="visually-hidden" for="subscribe-email">"Укажите e-mail</label>
-            <input class="subscribe__input" name="subscribe-email" id="subscribe-email" type="email"
-              placeholder="Ваш e-mail" required>
-            <button class="button subscribe__button button--second" type="submit">Подписаться</button>
-          </form>
+          <div class="subscribe__wrapper">
+            <h2 class="subscribe__title">Подпишитесь на рассылку</h2>
+            <p class="subscribe__description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+            <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post">
+              <label class="visually-hidden" for="subscribe-email">"Укажите e-mail.</label>
+              <input class="subscribe__input" name="subscribe-email" id="subscribe-email" type="email"
+                placeholder="Ваш e-mail" required>
+              <button class="button subscribe__button button--second" type="submit">Подписаться</button>
+            </form>
+          </div>
         </section>
       </main>
       <footer class="page__footer page-footer" data-test="footer">
         <div class="page__footer-social__list">
-          <h4 class="visually-hidden">Социальные сети</h4>
+          <h4 class="visually-hidden">Социальные сети.</h4>
           <ul class="social-list">
             <li class="social__item">
               <a class="social__link" href="#">
-                <span class="visually-hidden">ВКонтакте</span>
+                <span class="visually-hidden">ВКонтакте.</span>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link" href="#">
-                <span class="visually-hidden">Телеграм</span>
+                <span class="visually-hidden">Телеграм.</span>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link" href="#">
-                <span class="visually-hidden">Ютуб</span>
+                <span class="visually-hidden">Ютуб.</span>
               </a>
             </li>
           </ul>
