@@ -118,10 +118,28 @@
               <div class="catalog-filter__wrapper">
                 <fieldset class="catalog-filter__group">
                   <legend class="catalog-filter__title">Стоимость, ₽:</legend>
-                  <label for="price-min">от</label>
-                  <input type="number" name="price-min" id="" min="0" value="0" class="catalog-filter__price">
-                  <label for="price-max">до</label>
-                  <input type="number" name="price-max" max="9000" value="9000" class="catalog-filter__price">
+                  <div class="range-input__wrapper">
+                    <label class="catalog-filter__label">
+                      <input class="range-input range-input__min" type="number" value="0" name="min-price" placeholder="0">
+                      <span class="catalog-filter__label-description">от</span>
+                    </label>
+                    <label class="catalog-filter__label">
+                      <input class="range-input range-input__max" type="number" value="9000" name="max-price" placeholder="9000">
+                      <span class="catalog-filter__label-description">до</span>
+                    </label>
+                  </div>
+                  <div class="range">
+                    <div class="range__scale">
+                      <div class="range__bar" style="left: 0; width: 228px">
+                        <button class="range__toggle range-toggle__min">
+                          <span class="visually-hidden">Изменить минимальную цену</span>
+                        </button>
+                        <button class="range__toggle range-toggle__max">
+                          <span class="visually-hidden">Изменить максимальную цену</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
                 </fieldset>
                 <fieldset class="catalog-filter__group">
                   <div class="catalog-filter__button">
@@ -230,7 +248,7 @@
               </p>
               <div class="catalog-card__button-wrapper">
                 <a href="#" class="button catalog-card__button button--basic">Подробнее</a>
-                <button type="button" class="button catalog-card__button button--third">В избранное</button>
+                <button type="button" class="button catalog-card__button button--third">В избранном</button>
               </div>
               <div class="catalog-card__button-wrapper rating">
                 <span class="visually-hidden">4 звезды.</span>
