@@ -1,24 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: > 2% and last 1 version
-*/
-
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
@@ -191,6 +170,7 @@ img {
 .button--four {
   background-color: transparent;
   color: var(--texts-background-deafault);
+  transition: opacity 0.5s;
 }
 
 .button--four:hover {
@@ -222,6 +202,11 @@ img {
   margin-bottom: -6px;
   z-index: 1;
   height: 70px;
+  transition: opacity 0.5s;
+}
+
+.main-navigation__logo:hover {
+  opacity: 0.5;
 }
 
 .main-navigation {
@@ -253,6 +238,12 @@ img {
   padding: 20px 0;
   display: inline-block;
   position: relative;
+  transition: opacity 0.5s;
+}
+
+.site-navigation__link:hover,
+.site-navigation__link:active {
+  opacity: 0.5;
 }
 
 .site-navigation__link--active::after {
@@ -262,7 +253,7 @@ img {
   display: block;
   background-color: var(--buttons-basic);
   position: absolute;
-  bottom: -1px;
+  bottom: 0;
   z-index: 1;
 }
 
@@ -292,6 +283,12 @@ img {
   display: block;
   box-sizing: border-box;
   position: relative;
+  transition: opacity 0.5s;
+}
+
+.user-navigation__link:hover,
+.user-navigation__link:active {
+  opacity: 0.5;
 }
 
 .user-navigation__link-search {
@@ -772,15 +769,15 @@ img {
   outline: none;
 }
 
-.social__link:hover svg path {
+.social__link:hover path {
   fill: var(--buttons-blue-hover);
 }
 
-.social__link:focus svg path {
+.social__link:focus path {
   fill: var(--buttons-blue-hover);
 }
 
-.social__link:active svg path {
+.social__link:active path {
   fill: var(--buttons-blue-hover);
 }
 
@@ -821,15 +818,15 @@ img {
   margin-left: auto;
 }
 
-.copyright-link:hover svg path {
+.copyright-link:hover path {
   fill: var(--texts-hover);
 }
 
-.copyright-link:focus svg path {
+.copyright-link:focus path {
   fill: var(--texts-hover);
 }
 
-.copyright-link:active svg path {
+.copyright-link:active path {
   fill: var(--texts-active);
 }
 
@@ -873,6 +870,7 @@ img {
 
 .breadcrumbs__item::after {
   position: absolute;
+  top: 0;
   right: -19px;
   width: 8px;
   height: 21px;
@@ -890,6 +888,12 @@ img {
   line-height: inherit;
   color: inherit;
   text-decoration: none;
+  transition: opacity 0.5s;
+}
+
+.breadcrumbs__link:hover,
+.breadcrumbs__link:active {
+  opacity: 0.5;
 }
 
 .catalog {
@@ -942,6 +946,7 @@ img {
   padding-left: 36px;
   position: relative;
   cursor: pointer;
+  transition: opacity 0.5s;
 }
 
 .control__label {
@@ -1284,7 +1289,7 @@ input::-webkit-inner-spin-button {
   background-color: transparent;
   border: none;
   -webkit-appearance: textfield;
-          appearance: textfield;
+  appearance: textfield;
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 18px;
@@ -1325,7 +1330,7 @@ input::-webkit-inner-spin-button {
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
   -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
   margin: 0;
 }
 
@@ -1363,7 +1368,7 @@ input::-webkit-inner-spin-button {
   background-repeat: no-repeat;
   background-position: right 19px center;
   -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
   outline: none;
   cursor: pointer;
 }
@@ -1583,6 +1588,7 @@ input::-webkit-inner-spin-button {
   background-image: url(../images/svg/close.svg);
   background-repeat: no-repeat;
   background-position: center;
+  transition: background-color 0.5s;
 }
 
 .modal__close:hover {
@@ -1719,7 +1725,7 @@ input::-webkit-inner-spin-button {
   vertical-align: middle;
 }
 
-.search-form__count-sign:hover svg path {
+.search-form__count-sign:hover path {
   fill: var(--texts-texts-basic);
 }
 
@@ -1728,7 +1734,7 @@ input::-webkit-inner-spin-button {
   border-radius: 4px;
 }
 
-.search-form__count-sign:focus svg path {
+.search-form__count-sign:focus path {
   fill: var(--texts-texts-basic);
 }
 
@@ -1736,7 +1742,7 @@ input::-webkit-inner-spin-button {
   border-color: transparent;
 }
 
-.search-form__count-sign:active svg path {
+.search-form__count-sign:active path {
   fill: var(--buttons-basic);
   opacity: 0.2;
 }
